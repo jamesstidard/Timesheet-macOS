@@ -16,6 +16,13 @@
 		7C79A82D1CA48746006EFB60 /* Gloss.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82A1CA48746006EFB60 /* Gloss.framework.dSYM */; };
 		7C79A82E1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82B1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM */; };
 		7C79A82F1CA48746006EFB60 /* Result.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82C1CA48746006EFB60 /* Result.framework.dSYM */; };
+		7C79A8321CA48A9C006EFB60 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8311CA48A9C006EFB60 /* Project.swift */; };
+		7C79A8341CA48AE2006EFB60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8331CA48AE2006EFB60 /* User.swift */; };
+		7C79A8361CA48C9B006EFB60 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8351CA48C9B006EFB60 /* Token.swift */; };
+		7C79A8381CA48EAA006EFB60 /* UnixDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8371CA48EAA006EFB60 /* UnixDecoder.swift */; };
+		7C79A83A1CA49074006EFB60 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8391CA49074006EFB60 /* Log.swift */; };
+		7C79A83E1CA4923A006EFB60 /* UnixEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A83D1CA4923A006EFB60 /* UnixEncoder.swift */; };
+		7C79A8401CA494A0006EFB60 /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A83F1CA494A0006EFB60 /* Integration.swift */; };
 		7CB61EA41C90A91D00C8EB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */; };
 		7CB61EA61C90A91D00C8EB2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA51C90A91D00C8EB2B /* ViewController.swift */; };
 		7CB61EA81C90A91D00C8EB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB61EA71C90A91D00C8EB2B /* Assets.xcassets */; };
@@ -69,6 +76,13 @@
 		7C79A82A1CA48746006EFB60 /* Gloss.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Gloss.framework.dSYM; path = Carthage/Build/Mac/Gloss.framework.dSYM; sourceTree = "<group>"; };
 		7C79A82B1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
 		7C79A82C1CA48746006EFB60 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
+		7C79A8311CA48A9C006EFB60 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		7C79A8331CA48AE2006EFB60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7C79A8351CA48C9B006EFB60 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		7C79A8371CA48EAA006EFB60 /* UnixDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixDecoder.swift; sourceTree = "<group>"; };
+		7C79A8391CA49074006EFB60 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		7C79A83D1CA4923A006EFB60 /* UnixEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixEncoder.swift; sourceTree = "<group>"; };
+		7C79A83F1CA494A0006EFB60 /* Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
 		7CB61EA01C90A91D00C8EB2B /* Timesheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timesheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB61EA51C90A91D00C8EB2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +128,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C79A8301CA48A4D006EFB60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C79A8311CA48A9C006EFB60 /* Project.swift */,
+				7C79A8331CA48AE2006EFB60 /* User.swift */,
+				7C79A8351CA48C9B006EFB60 /* Token.swift */,
+				7C79A8391CA49074006EFB60 /* Log.swift */,
+				7C79A83F1CA494A0006EFB60 /* Integration.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7C79A83B1CA49087006EFB60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C79A83C1CA490A9006EFB60 /* Gloss */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7C79A83C1CA490A9006EFB60 /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+				7C79A8371CA48EAA006EFB60 /* UnixDecoder.swift */,
+				7C79A83D1CA4923A006EFB60 /* UnixEncoder.swift */,
+			);
+			name = Gloss;
+			sourceTree = "<group>";
+		};
 		7CB61E971C90A91D00C8EB2B = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +180,8 @@
 		7CB61EA21C90A91D00C8EB2B /* Timesheet */ = {
 			isa = PBXGroup;
 			children = (
+				7C79A83B1CA49087006EFB60 /* Extensions */,
+				7C79A8301CA48A4D006EFB60 /* Model */,
 				7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */,
 				7CB61EA51C90A91D00C8EB2B /* ViewController.swift */,
 				7CB61EA71C90A91D00C8EB2B /* Assets.xcassets */,
@@ -257,8 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C79A83E1CA4923A006EFB60 /* UnixEncoder.swift in Sources */,
+				7C79A8341CA48AE2006EFB60 /* User.swift in Sources */,
+				7C79A8401CA494A0006EFB60 /* Integration.swift in Sources */,
+				7C79A83A1CA49074006EFB60 /* Log.swift in Sources */,
+				7C79A8361CA48C9B006EFB60 /* Token.swift in Sources */,
+				7C79A8381CA48EAA006EFB60 /* UnixDecoder.swift in Sources */,
 				7CB61EA61C90A91D00C8EB2B /* ViewController.swift in Sources */,
 				7CB61EA41C90A91D00C8EB2B /* AppDelegate.swift in Sources */,
+				7C79A8321CA48A9C006EFB60 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

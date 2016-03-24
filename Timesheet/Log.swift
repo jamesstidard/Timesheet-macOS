@@ -1,0 +1,55 @@
+//
+//  Log.swift
+//  Timesheet
+//
+//  Created by James Stidard on 24/03/2016.
+//  Copyright © 2016 James Stidard. All rights reserved.
+//
+
+import Foundation
+import Gloss
+
+
+struct LogPayload: Decodable {
+    
+    let result: [Log]
+    
+    init?(json: JSON) {
+        guard let result: [Log] = "result" <~~ json
+            else { return nil }
+        
+        self.result = result
+    }
+}
+
+
+struct Log: Decodable {
+    
+    let id:             Int
+    let project_id:     String
+    let integration_id: Int
+    let task:           String?
+    let start:          NSDate?
+    let end:            NSDate?
+    let notes:          String?
+    
+    init?(json: JSON) {
+        guard let
+            id:             Int     = "id" <~~ json,
+            project_id:     String  = "project_id" <~~ json,
+            integration_id: Int     = "integration_id" <~~ json,
+            task:           String? = "task" <~~ json,
+            start:          NSDate? = Decoder.decodeUnixTimestamp("created", json: json),
+            end:            NSDate? = Decoder.decodeUnixTimestamp("created", json: json),
+            notes:          String? = "notes" <~~ json
+            else { return nil }
+        
+        self.id             = id
+        self.project_id     = project_id
+        self.integration_id = integration_id
+        self.task           = task
+        self.start          = start
+        self.end            = end
+        self.notes          = notes
+    }
+}
