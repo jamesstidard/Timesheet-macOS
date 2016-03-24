@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C79A8211CA48660006EFB60 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A81E1CA48660006EFB60 /* Gloss.framework */; };
+		7C79A8221CA48660006EFB60 /* Gloss.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A81E1CA48660006EFB60 /* Gloss.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C79A8231CA48660006EFB60 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A81F1CA48660006EFB60 /* ReactiveCocoa.framework */; };
+		7C79A8241CA48660006EFB60 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A81F1CA48660006EFB60 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C79A8251CA48660006EFB60 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A8201CA48660006EFB60 /* Result.framework */; };
+		7C79A8261CA48660006EFB60 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A8201CA48660006EFB60 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C79A82D1CA48746006EFB60 /* Gloss.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82A1CA48746006EFB60 /* Gloss.framework.dSYM */; };
+		7C79A82E1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82B1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM */; };
+		7C79A82F1CA48746006EFB60 /* Result.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C79A82C1CA48746006EFB60 /* Result.framework.dSYM */; };
 		7CB61EA41C90A91D00C8EB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */; };
 		7CB61EA61C90A91D00C8EB2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA51C90A91D00C8EB2B /* ViewController.swift */; };
 		7CB61EA81C90A91D00C8EB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB61EA71C90A91D00C8EB2B /* Assets.xcassets */; };
@@ -24,7 +33,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7C79A8271CA48660006EFB60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C79A8261CA48660006EFB60 /* Result.framework in Embed Frameworks */,
+				7C79A8221CA48660006EFB60 /* Gloss.framework in Embed Frameworks */,
+				7C79A8241CA48660006EFB60 /* ReactiveCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C79A8291CA48727006EFB60 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				7C79A82D1CA48746006EFB60 /* Gloss.framework.dSYM in CopyFiles */,
+				7C79A82E1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM in CopyFiles */,
+				7C79A82F1CA48746006EFB60 /* Result.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7C79A81D1CA48385006EFB60 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		7C79A81E1CA48660006EFB60 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = Carthage/Build/Mac/Gloss.framework; sourceTree = "<group>"; };
+		7C79A81F1CA48660006EFB60 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		7C79A8201CA48660006EFB60 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		7C79A82A1CA48746006EFB60 /* Gloss.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Gloss.framework.dSYM; path = Carthage/Build/Mac/Gloss.framework.dSYM; sourceTree = "<group>"; };
+		7C79A82B1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		7C79A82C1CA48746006EFB60 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		7CB61EA01C90A91D00C8EB2B /* Timesheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timesheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB61EA51C90A91D00C8EB2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C79A8251CA48660006EFB60 /* Result.framework in Frameworks */,
+				7C79A8211CA48660006EFB60 /* Gloss.framework in Frameworks */,
+				7C79A8231CA48660006EFB60 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C79A8281CA48689006EFB60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C79A82A1CA48746006EFB60 /* Gloss.framework.dSYM */,
+				7C79A82B1CA48746006EFB60 /* ReactiveCocoa.framework.dSYM */,
+				7C79A82C1CA48746006EFB60 /* Result.framework.dSYM */,
+				7C79A81E1CA48660006EFB60 /* Gloss.framework */,
+				7C79A81F1CA48660006EFB60 /* ReactiveCocoa.framework */,
+				7C79A8201CA48660006EFB60 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CB61E971C90A91D00C8EB2B = {
 			isa = PBXGroup;
 			children = (
 				7CB61EA21C90A91D00C8EB2B /* Timesheet */,
 				7CB61EB41C90A91D00C8EB2B /* TimesheetUITests */,
+				7C79A8281CA48689006EFB60 /* Frameworks */,
 				7CB61EA11C90A91D00C8EB2B /* Products */,
+				7C79A81D1CA48385006EFB60 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +165,8 @@
 				7CB61E9C1C90A91D00C8EB2B /* Sources */,
 				7CB61E9D1C90A91D00C8EB2B /* Frameworks */,
 				7CB61E9E1C90A91D00C8EB2B /* Resources */,
+				7C79A8271CA48660006EFB60 /* Embed Frameworks */,
+				7C79A8291CA48727006EFB60 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -313,6 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Timesheet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stidard.Timesheet;
@@ -325,6 +393,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Timesheet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stidard.Timesheet;
@@ -377,6 +449,7 @@
 				7CB61EBC1C90A91D00C8EB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CB61EBD1C90A91D00C8EB2B /* Build configuration list for PBXNativeTarget "TimesheetUITests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +458,7 @@
 				7CB61EBF1C90A91D00C8EB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
