@@ -40,4 +40,12 @@ struct Integration: Decodable {
         self.name  = name
         self.token = token
     }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.id,
+            "name" ~~> self.name,
+            "token" ~~> self.token
+        ])
+    }
 }

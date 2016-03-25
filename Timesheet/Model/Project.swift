@@ -40,4 +40,12 @@ struct Project: Decodable {
         self.name = name
         self.integration_id = integration_id
     }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.id,
+            "name" ~~> self.name,
+            "integration_id" ~~> self.integration_id
+        ])
+    }
 }

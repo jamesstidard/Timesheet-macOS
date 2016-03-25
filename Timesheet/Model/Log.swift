@@ -52,4 +52,16 @@ struct Log: Decodable {
         self.end            = end
         self.notes          = notes
     }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.id,
+            "project_id" ~~> self.project_id,
+            "integration_id" ~~> self.integration_id,
+            "task" ~~> self.task,
+            Encoder.encodeUnixTimestamp("start", value: self.start),
+            Encoder.encodeUnixTimestamp("end", value: self.end),
+            "notes" ~~> self.notes
+        ])
+    }
 }

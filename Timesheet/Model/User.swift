@@ -49,4 +49,11 @@ struct User: Decodable {
         self.logs         = logs
         self.integrations = integrations
     }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.id,
+            "username" ~~> self.username
+        ])
+    }
 }

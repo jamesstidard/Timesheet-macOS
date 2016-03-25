@@ -12,7 +12,7 @@ import Gloss
 
 extension Encoder {
     
-    static func encodeStringLowercase(key: String, value: NSDate?) -> JSON? {
+    static func encodeUnixTimestamp(key: String, value: NSDate?) -> JSON? {
         
         if let value = value {
             return [key : value.timeIntervalSince1970]

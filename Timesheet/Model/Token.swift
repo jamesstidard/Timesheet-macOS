@@ -40,4 +40,12 @@ struct Token: Decodable {
         self.name    = name
         self.created = created
     }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "id" ~~> self.id,
+            "name" ~~> self.name,
+            Encoder.encodeUnixTimestamp("created", value: self.created)
+        ])
+    }
 }
