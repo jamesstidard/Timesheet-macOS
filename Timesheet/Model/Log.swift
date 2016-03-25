@@ -25,13 +25,15 @@ struct LogPayload: Decodable {
 
 struct Log: Decodable {
     
-    let id:             Int
-    let project_id:     String
-    let integration_id: Int
-    let task:           String?
-    let start:          NSDate?
-    let end:            NSDate?
-    let notes:          String?
+    var id:             Int?    = nil
+    var project_id:     String? = nil
+    var integration_id: Int?    = nil
+    var task:           String? = nil
+    var start:          NSDate? = nil
+    var end:            NSDate? = nil
+    var notes:          String? = nil
+    
+    init() {}
     
     init?(json: JSON) {
         guard let

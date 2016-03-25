@@ -25,15 +25,15 @@ struct TokenPayload: Decodable {
 
 struct Token: Decodable {
     
-    let id:      String
+    let id:      String?
     let name:    String
     let created: NSDate
     
     init?(json: JSON) {
         guard
-            let id:      String = "id" <~~ json,
-            let name:    String = "name" <~~ json,
-            let created: NSDate = Decoder.decodeUnixTimestamp("created", json: json)
+            let id:      String? = "id" <~~ json,
+            let name:    String  = "name" <~~ json,
+            let created: NSDate  = Decoder.decodeUnixTimestamp("created", json: json)
             else { return nil }
         
         self.id      = id

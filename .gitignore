@@ -28,3 +28,5 @@ xcuserdata/
 # Carthage
 Carthage/Checkouts
 Carthage/Build
+
+Keys.swift

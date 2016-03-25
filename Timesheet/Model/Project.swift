@@ -25,14 +25,14 @@ struct ProjectPayload: Decodable {
 
 struct Project: Decodable {
     
-    let id:   String
+    let id:   String?
     let name: String
     let integration_id: Int
     
     init?(json: JSON) {
         guard
-            let id:   String = "id" <~~ json,
-            let name: String = "name" <~~ json,
+            let id:   String? = "id" <~~ json,
+            let name: String  = "name" <~~ json,
             let integration_id: Int = "integration_id" <~~ json
             else { return nil }
         

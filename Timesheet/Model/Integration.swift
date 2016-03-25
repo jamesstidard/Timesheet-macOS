@@ -25,13 +25,13 @@ struct IntegrationPayload: Decodable {
 
 struct Integration: Decodable {
     
-    let id:    Int
+    let id:    Int?
     let name:  String
     let token: String?
     
     init?(json: JSON) {
         guard
-            let id: Int        = "id" <~~ json,
+            let id: Int?       = "id" <~~ json,
             let name: String   = "name" <~~ json,
             let token: String? = "token" <~~ json
             else { return nil }

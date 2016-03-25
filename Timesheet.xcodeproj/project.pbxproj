@@ -23,6 +23,7 @@
 		7C79A83A1CA49074006EFB60 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8391CA49074006EFB60 /* Log.swift */; };
 		7C79A83E1CA4923A006EFB60 /* UnixEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A83D1CA4923A006EFB60 /* UnixEncoder.swift */; };
 		7C79A8401CA494A0006EFB60 /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A83F1CA494A0006EFB60 /* Integration.swift */; };
+		7C79A84A1CA4C860006EFB60 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79A8491CA4C860006EFB60 /* Keys.swift */; };
 		7CB61EA41C90A91D00C8EB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */; };
 		7CB61EA61C90A91D00C8EB2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB61EA51C90A91D00C8EB2B /* ViewController.swift */; };
 		7CB61EA81C90A91D00C8EB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB61EA71C90A91D00C8EB2B /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		7C79A8391CA49074006EFB60 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7C79A83D1CA4923A006EFB60 /* UnixEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixEncoder.swift; sourceTree = "<group>"; };
 		7C79A83F1CA494A0006EFB60 /* Integration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
+		7C79A8491CA4C860006EFB60 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		7CB61EA01C90A91D00C8EB2B /* Timesheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timesheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB61EA31C90A91D00C8EB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB61EA51C90A91D00C8EB2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				7C79A83B1CA49087006EFB60 /* Extensions */,
 				7CB61EA71C90A91D00C8EB2B /* Assets.xcassets */,
 				7CB61EAC1C90A91D00C8EB2B /* Info.plist */,
+				7C79A8491CA4C860006EFB60 /* Keys.swift */,
 			);
 			path = Timesheet;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				7CB61EA61C90A91D00C8EB2B /* ViewController.swift in Sources */,
 				7CB61EA41C90A91D00C8EB2B /* AppDelegate.swift in Sources */,
 				7C79A8321CA48A9C006EFB60 /* Project.swift in Sources */,
+				7C79A84A1CA4C860006EFB60 /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

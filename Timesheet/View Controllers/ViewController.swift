@@ -7,9 +7,19 @@
 //
 
 import Cocoa
+import ReactiveCocoa
 
 class ViewController: NSViewController {
-
+    
+    static let BaseUrl = "https://zoho-timesheet-dev.herokuapp.com/v1/resources"
+    
+    
+    @IBOutlet weak var fuzzyInputTokenField: NSTokenField!
+    
+    let projects: [Project] = []
+    let log = Log()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

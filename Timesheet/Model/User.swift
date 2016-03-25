@@ -25,7 +25,7 @@ struct UserPayload: Decodable {
 
 struct User: Decodable {
     
-    let id:           String
+    let id:           String?
     let username:     String
     let settings:     [String: AnyObject]
     let tokens:       [Token]
@@ -34,7 +34,7 @@ struct User: Decodable {
     
     init?(json: JSON) {
         guard let
-            id:           String              = "id" <~~ json,
+            id:           String?             = "id" <~~ json,
             username:     String              = "username" <~~ json,
             settings:     [String: AnyObject] = "settings" <~~ json,
             tokens:       [Token]             = "tokens" <~~ json,
